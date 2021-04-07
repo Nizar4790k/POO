@@ -48,4 +48,28 @@ public class Bicicleta
     public void cambiarPinon(){
         this.pinonActual = 1;
     }
+
+    public int getVelocidadActual() {
+        return velocidadActual;
+    }
+
+    public void setVelocidadActual(int velocidadActual) {
+        this.velocidadActual = velocidadActual;
+    }
+
+    public int getPlatoActual() {
+        return platoActual;
+    }
+
+    public void setPlatoActual(int platoActual) {
+        this.platoActual = platoActual;
+    }
+
+    public int getPinonActual() {
+        return pinonActual;
+    }
+
+    public void setPinonActual(int pinonActual) {
+        this.pinonActual = pinonActual;
+    }
 }
