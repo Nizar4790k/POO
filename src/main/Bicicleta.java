@@ -1,6 +1,6 @@
 package main;
 
-public class Bicicleta extends Vehiculo
+public class Bicicleta extends Vehiculo implements  Imprimible
 {
 
     private int velocidadActual;
@@ -73,5 +73,15 @@ public class Bicicleta extends Vehiculo
 
     public void setPinonActual(int pinonActual) {
         this.pinonActual = pinonActual;
+    }
+
+    @Override
+    public void imprime() {
+        System.out.println(
+                        "Velocidad actual: "+this.velocidadActual+"\n"+
+                        "Plato actual: "+this.platoActual+"\n"+
+                                "Pinon actual: "+this.pinonActual+"\n"
+
+                );
     }
 }
