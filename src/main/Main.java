@@ -4,17 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Bicicleta miBicicleta = new Bicicleta(2,1,1);
-        Bicicleta tuBicicleta = new Bicicleta(3,1,2);
+        Bicicleta [] bicicletas =
+                {new BicicletaMontana(2,2,2,2),
+                 new Bicicleta(2,3,2),
+                new BicicletaTandem(4,3,2,1)};
 
-        BicicletaMontana bicicletaMontana = new BicicletaMontana(2,1,1,1);
-        BicicletaTandem bicicletaTandem = new BicicletaTandem(2,1,1,2);
 
-        bicicletaMontana.acelerar();
-        bicicletaTandem.acelerar();
+        for (Bicicleta bicicleta:bicicletas){
+            bicicleta.acelerar();
+        }
 
-        System.out.println("Velocidad actual bicicleta montana: "+bicicletaMontana.getVelocidadActual());
-        System.out.println("Velocidad actual bicicleta tandem: "+bicicletaTandem.getVelocidadActual());
     }
 
 }
