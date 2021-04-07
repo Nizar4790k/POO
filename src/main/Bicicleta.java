@@ -1,6 +1,6 @@
 package main;
 
-public class Bicicleta
+public class Bicicleta extends Vehiculo
 {
 
     private int velocidadActual;
@@ -19,12 +19,14 @@ public class Bicicleta
         this.pinonActual = 1;
     }
 
+    @Override
     public void acelerar()
     {
 
         velocidadActual *= 2;
     }
 
+    @Override
     public void frenar()
     {
         velocidadActual  *= 0.5;
