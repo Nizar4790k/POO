@@ -13,6 +13,12 @@ public class Bicicleta
         this.pinonActual = pinonActual;
     }
 
+    public Bicicleta(){
+        this.velocidadActual = 0;
+        this.platoActual = 1;
+        this.pinonActual = 1;
+    }
+
     public void acelerar()
     {
 
