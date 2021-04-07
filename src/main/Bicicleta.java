@@ -24,13 +24,22 @@ public class Bicicleta
         velocidadActual  *= 0.5;
     }
 
-    public void cambiarPlato(int plato){
+    public void cambiarPlato(int plato)
+    {
         this.platoActual = plato;
     }
 
-    public void cambiarPinon(int pinon){
+    public void cambiarPinon(int pinon)
+    {
         this.pinonActual = pinon;
     }
 
+    public void cambiarPlato()
+    {
+        this.platoActual = 1;
+    }
 
+    public void cambiarPinon(){
+        this.pinonActual = 1;
+    }
 }
