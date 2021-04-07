@@ -84,4 +84,9 @@ public class Bicicleta extends Vehiculo implements  Imprimible
 
                 );
     }
+
+    @Override
+    public String getAtributos() {
+        return null;
+    }
 }

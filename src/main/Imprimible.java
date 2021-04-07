@@ -1,6 +1,6 @@
 package main;
 
-public interface Imprimible {
+public interface Imprimible extends Definir {
 void imprime();
 }
 
